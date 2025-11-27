@@ -223,7 +223,7 @@ if prompt:
     else:
         # Normal chat yanıtı
         with st.chat_message("assistant"):
-            response = f"You said: **{prompt}**\n\n💡 **Try these:**\n- `generate image {prompt}` - Create AI images\n- Upload images → type `pdf` - Convert to PDF\n- Ask me anything!"
+            response = f"You said: **{prompt}**\n\n💡 **Try these:**\n- `generate image {prompt[1]}` - Create AI images\n- Upload images → type `pdf` - Convert to PDF\n- Ask me anything!"
 
         st.session_state.messages.append({
             "role": "assistant",
